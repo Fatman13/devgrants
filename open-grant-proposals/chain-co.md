@@ -20,7 +20,7 @@
 
 At the time of writting this proposal, Filecoin network has reached ~16 EiB storage power with ~20 to ~30 PiB growth per day. Given that more than 400 nodes are having 10+ PiB of storage power with top nodes even having 100+ PiB storage power, a high availability solution for Filecoin daemon would be crucial to the stability and overall health of the network. Imagine the Filecoin daemon node for a 100 PiB storage system failed to sync height with network or experienced severe hardware failure for an extended period of time, storage power would be wiped out and causing turbulence to the network, which is not ideal at all.
 
-In order to mitigate the risk of Filecoin daemon failure and to secure a generally sane and coherent network, we propose chain coordination, chain-co for short, to coordinate a collection of redundant daemon nodes and let the storage system to use the daemon that has the most height synced. Thus, paves the way for a stronger and more resilient Filecoin network.
+In order to mitigate the risk of Filecoin daemon failure and to secure a generally sane and coherent network, we propose chain coordinator, chain-co for short, to coordinate a collection of redundant daemon nodes and let the storage system to use the daemon that has the heaviest chain (most weighed). Thus, paves the way for a stronger and more resilient Filecoin network.
 
 <!-- This section should be 2-3 paragraphs long. -->
 
@@ -43,7 +43,7 @@ On the other hand, the risk of not having chain-co infrastructure would deprive 
 
 <!-- Please describe in details what your final deliverable for this project will be. Include a specification of the project and what functionality the software will deliver when it is finished. -->
 
-Chain-co solution will be running in between a pool of redundant Fileccoin daemon of different flavors and a proxy agent. 
+Chain-co solution will be running in between a pool of redundant Fileccoin daemons of different flavors and a proxy agent. 
 
 ![arch](https://raw.githubusercontent.com/hunjixin/imgpool/master/chain-co.png)
 
@@ -72,7 +72,7 @@ Chain-co solution will be running in between a pool of redundant Fileccoin daemo
 
 <!-- Specify your team's long-term plans to maintain this software and upgrade it over time. -->
 
-Chain-co will be committed to integrate the daemons of all four implementation of Filecoin to offer community a complete the high availability solution.
+Chain-co will be committed to integrate the daemons of all four implementations of Filecoin to offer community a complete high availability solution.
 
 # Team
 

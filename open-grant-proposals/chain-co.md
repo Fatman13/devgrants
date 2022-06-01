@@ -1,4 +1,4 @@
-# Grant Proposal: `A high availability solution for Filecoin Daemon`
+# RFP Proposal: `A high availability solution for Filecoin Daemon`
 
 **Name of Project: Chain-co**
 
@@ -105,6 +105,8 @@ Force community has been an active contributor to Web3 ecosystem and Filecoin ec
 ## Team code repositories
 
 <!-- Please provide links to your team's prior code repos for similar or related projects. -->
+
+https://github.com/ipfs-force-community
 
 # Additional Information
 
